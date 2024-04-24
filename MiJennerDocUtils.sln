@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiJennerDocUtils", "MiJennerDocUtils\MiJennerDocUtils.csproj", "{C9E72BA2-B625-45E0-B324-368E572502E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsageExamples", "UsageExamples\UsageExamples.csproj", "{FE34DC1D-69F0-43A1-8993-AD93F6C484F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9E72BA2-B625-45E0-B324-368E572502E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E72BA2-B625-45E0-B324-368E572502E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E72BA2-B625-45E0-B324-368E572502E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E72BA2-B625-45E0-B324-368E572502E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE34DC1D-69F0-43A1-8993-AD93F6C484F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE34DC1D-69F0-43A1-8993-AD93F6C484F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE34DC1D-69F0-43A1-8993-AD93F6C484F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE34DC1D-69F0-43A1-8993-AD93F6C484F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD73074F-7264-4F40-9940-1AA524D75037}
+	EndGlobalSection
+EndGlobal
