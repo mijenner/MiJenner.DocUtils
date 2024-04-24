@@ -6,6 +6,60 @@ using System.Threading.Tasks;
 
 namespace ConsoleTetris
 {
+    public delegate int Calculation(int x, int y);
+
+    public class Calculator
+    {
+        // Declare an instance of the delegate with accessor modifiers.
+        public Calculation Add;
+
+        public Calculator()
+        {
+            // Initialize delegate to reference an AddMethod
+            Add = AddMethod;
+        }
+
+        private int AddMethod(int a, int b)
+        {
+            return a + b;
+        }
+    }
+
+
+    public class Process
+    {
+        // Define a delegate that serves as the base for the event.
+        public delegate void ProgressNotification(string message);
+
+        // Declare the event using the delegate.
+        public event ProgressNotification OnProgress;
+
+        public void StartProcess()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                // Raise the event at each step.
+                OnProgress?.Invoke($"Progress: {i * 10}%");
+                System.Threading.Thread.Sleep(100); // Simulate some work.
+            }
+        }
+    }
+
+    public class EventListener
+    {
+        public void Subscribe(Process process)
+        {
+            process.OnProgress += HandleProgress;
+        }
+
+        private void HandleProgress(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+
+
+
     public enum Command
     {
         MoveLeft,
@@ -17,6 +71,8 @@ namespace ConsoleTetris
         Hold,
         None
     }
+
+
 
     internal class TestSourceFile
     {

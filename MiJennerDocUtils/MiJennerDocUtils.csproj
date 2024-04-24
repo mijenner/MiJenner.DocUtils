@@ -1,15 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName />
     <RootNamespace>MiJenner.DocUtils</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>MiJenner.DocUtils</PackageId>
+    <Title>MiJenner.DocUtils</Title>
+    <Version>0.9.0</Version>
+    <Authors>Michael Jenner</Authors>
+    <Company>Jenner IT</Company>
+    <Description>Extract documentation from source files. </Description>
+    <Copyright>Copyright (c) 2024 Jenner IT </Copyright>
+    <PackageProjectUrl>https://github.com/mijenner/MiJenner.DocUtils</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mijenner/MiJenner.DocUtils</RepositoryUrl>
+    <PackageTags>C#;Documentation</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
